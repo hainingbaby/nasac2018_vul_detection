@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testset name="testset_for_java">
+    <testcase id="testset4_mini_java">
+      <path>testset4_mini_java</path>
+      <vul>
+        <iscounterexample>No</iscounterexample>
+        <type>NULL_POINTER_DEREFERENCE</type>
+        <sink>
+          <file>src/testcases/testset4/testset4_5_01.java</file>
+          <line>15</line>
+        </sink>
+      </vul>
+      <vul>
+        <iscounterexample>Yes</iscounterexample>
+        <type>NULL_POINTER_DEREFERENCE</type>
+        <sink>
+          <file>src/testcases/testset4/testset4_5_01.java</file>
+          <line>34</line>
+        </sink>
+      </vul>
+      <vul>
+        <iscounterexample>Yes</iscounterexample>
+        <type>NULL_POINTER_DEREFERENCE</type>
+        <sink>
+          <file>src/testcases/testset4/testset4_5_01.java</file>
+          <line>49</line>
+        </sink>
+      </vul>
+    </testcase>
+  </testset>

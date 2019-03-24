@@ -1,0 +1,133 @@
+package testcases.testset4;
+
+import testcasesupport.*;
+
+public class testset4_2_12 extends AbstractTestCase
+{
+    public void foo_bar() throws Throwable
+    {
+        int [] data;
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            data = null;
+        }
+        else
+        {
+
+            
+            data = new int[5];
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            IO.writeLine("" + data.length);
+        }
+        else
+        {
+
+            
+            if (data != null)
+            {
+                IO.writeLine("" + data.length);
+            }
+            else
+            {
+                IO.writeLine("data is null");
+            }
+
+        }
+    }
+
+    
+
+    private void cwe_foo() throws Throwable
+    {
+        int [] data;
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            data = new int[5];
+        }
+        else
+        {
+
+            
+            data = new int[5];
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            IO.writeLine("" + data.length);
+        }
+        else
+        {
+
+            
+            IO.writeLine("" + data.length);
+
+        }
+    }
+
+    
+
+    private void cwe_bar() throws Throwable
+    {
+        int [] data;
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            data = null;
+        }
+        else
+        {
+
+            
+            data = null;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse())
+        {
+            
+            if (data != null)
+            {
+                IO.writeLine("" + data.length);
+            }
+            else
+            {
+                IO.writeLine("data is null");
+            }
+        }
+        else
+        {
+
+            
+            if (data != null)
+            {
+                IO.writeLine("" + data.length);
+            }
+            else
+            {
+                IO.writeLine("data is null");
+            }
+
+        }
+    }
+
+    public void good() throws Throwable
+    {
+        cwe_foo();
+        cwe_bar();
+    }
+
+    public static void main(String[] args) throws ClassNotFoundException,
+           InstantiationException, IllegalAccessException
+    {
+        mainFromParent(args);
+    }
+}
